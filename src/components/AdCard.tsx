@@ -35,6 +35,15 @@ export function AdCard(props: AdCardProps) {
           </article>
         );
       }
+
+      default: {
+        console.error("Media type not implemented");
+        return (
+          <article className="flex flex-col p-4 mt-7">
+            <div className="text-sm text-gray-500">Media type implemented</div>
+          </article>
+        )
+      }
     }
   }
 
