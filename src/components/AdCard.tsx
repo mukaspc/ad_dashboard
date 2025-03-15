@@ -11,7 +11,7 @@ export function AdCard(props: AdCardProps) {
         return (
           <img
             src={props.ad.url}
-            className="z-10 object-cover w-full transition duration-700 ease-out group-hover:scale-105"
+            className="z-10 object-cover object-center w-full h-44 transition duration-700 ease-out group-hover:scale-105"
             alt={props.ad.type}
           />
         );
